@@ -1,0 +1,1100 @@
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 8000px;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    background-color: rgba(224, 122, 95, 0.7);
+    color: #FFFCF7;
+    border-radius: 15px;
+    z-index: 20;
+  
+}
+
+.links {
+   list-style-type: none;
+   float: right;
+   margin-right:40px;
+  
+
+}
+.links li{
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 28px;
+     
+
+}
+.links li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+     color: #FFFCF7;
+      position: relative; /* Needed for ::after */
+    padding-bottom: 5px;
+      
+}
+.links li a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width:0 ;
+    height: 2px;
+    background-color: #FFFCF7;
+    opacity: 0;
+}
+.links li a:hover::after{
+    width: 100%;
+    height: 2px;
+    transition: 1s;
+    opacity: 1;
+}
+.fa-solid{
+  margin-top: 27px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.search-container {
+  position: relative;
+  display: inline-block;
+  margin-top: -30px;
+  margin-left: 5px;
+}
+
+.search-container input[type="text"] {
+  padding-left: 35px; /* space for the icon */
+  border-radius: 15px ;
+  border: none;
+  height: 25px;
+  margin-left: 10px;
+  
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #E07A5F;
+  font-size: 16px;
+ 
+}
+
+.section-home{
+    background-image: url(../IMG/chanel-fragrance-Best-Summer-Perfumes-For-Women.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.overlay-home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(145, 128, 124, 0.7);
+}
+.content-home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.homeh1{
+    color: #FFFCF7;
+    text-transform: uppercase;
+    font-size: 50px;
+
+}
+.homep1{
+    color: #d0ccc6;
+    font-size: 18px;
+    letter-spacing: 1;
+}
+.home{
+    width: 125px;
+    height: 50px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+   
+
+}
+.hb1{
+    background-color: #FFFCF7;
+    
+}
+.hb2{
+    background-color: #81B29A;
+    color: #FFFCF7;
+}
+.home:hover{
+    opacity: 0.7;
+}
+.section-welcome{
+    width: 100%;
+    height: 100vh;
+}
+.welcome-container{
+    width: 80%;
+    margin :auto;
+}
+.welcome{
+    float: left;
+    width: 328px;
+    height: 240px;
+    border: 1px solid  #E07A5F; 
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 140px;
+    text-transform: capitalize;
+    font-weight: bold;
+     position: relative;
+
+
+}
+.welcome .fa-solid {
+    margin-bottom: 15px; 
+    display: inline-block;
+    color: #E07A5F; 
+}
+.welcomeh2{
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+.welcomep2{
+    width: 150px;
+    height: 4px;
+    background-color: #E07A5F;
+    margin: auto;
+    margin-top: 8px;
+}
+.welcome a{
+    text-decoration: none;
+    color: #E07A5F;
+}
+.welcomep1{
+    color: #aba8a5;
+}
+.welcome::after{
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 0;
+    top:0;
+    left: 0;
+     background-color: rgba(224, 122, 95, 0.7);
+    opacity: 0;
+    z-index: -1;
+}
+.welcome:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+.welcome:hover .welcomep1{
+  color: black
+}
+.welcome:hover .welcomeh1{
+    color:rgb(121, 121, 121) ;
+}
+.featured-section{
+    width: 100%;
+    height: 100vh;
+   background-color: rgba(224, 122, 95, 0.7);
+}
+.featured-container{
+    width: 80%;
+    margin: auto;
+}
+.featured-parent1{
+    margin-top: 70px;
+    margin-left: 85px;
+    position: relative;
+}
+.featured-parent2{
+    margin-left: 85px;
+    position: relative;
+}
+.featured-parent1 .featured-img1{
+   
+   float: left;
+   margin: auto;
+   margin-left: 30px;
+
+}
+.featured-parent2 .featured-img2{
+    float: left;
+    margin: auto;
+margin-top: 10px;
+margin-left: 30px;
+
+}
+.featuredh2{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    color: #FFFCF7;
+    padding-top: 20px;
+    
+}
+.featuredp2{
+    width: 110px;
+    height: 4px;
+    background-color: #81B29A;
+    margin: auto;
+    margin-top: 10px;
+
+}
+.featured-img1,
+.featured-img2 {
+    position: relative;
+    display: inline-block;
+}
+
+.featured-icons {
+    position: absolute;
+    top: 50%;   /* adjust distance from top */
+    left: 50%;  /* adjust distance from left */
+    transform: translate(-50%,-50%);   
+     color: #FFFCF7;
+    padding: 5px;
+    text-align: center;
+   visibility: hidden;
+    background-color: black;
+    opacity:0;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+   
+}
+.featuredh{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.featuredp{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.featured-icons i {
+ width :45px;
+ height: 25px;
+  font-size: 20px;            /* make the icons bigger */
+  color: #91908f;               /* icon color */
+  background: #FFFCF7; 
+  padding: 2px;              /* space inside the box */
+  border-radius: 5px;         /* rounded corners */
+  margin-top: 20px;;
+}
+
+.featured-img1:hover .featured-icons, .featured-img2:hover .featured-icons{
+    visibility: visible;
+    opacity: 0.7;
+}
+.offersection{
+    width: 100%;
+    height: 100vh;
+}
+.offer-container{
+    width:80%;
+    margin: auto;
+
+}
+.offerparent1 .offer{
+    position: relative;
+    margin-top: 120px;
+    float: left;
+    width: 310px;
+    height: 180px;
+    border: 1px solid #E07A5F ;
+    margin-left: 80px;
+    border-radius: 10px ;
+}
+.offerparent2 .offer2{
+    position: relative;
+    margin-top: 50px;
+    float: left;
+    width: 310px;
+    height: 180px;
+    border: 1px solid #E07A5F ;
+    margin-left: 80px;
+    border-radius: 10px ;
+}
+.offer .offerh{
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top:-35px ;
+    margin-left: 50px;
+
+
+}
+.offer .offerp{
+    display: inline-block;
+    margin-left:50px ;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #91908f;
+}
+.offer2 .offerh{
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top:-35px ;
+    margin-left: 50px;
+
+
+
+}
+.offer2 .offerp{
+    display: inline-block;
+    margin-left:50px ;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #91908f;
+}
+.offerh2{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 60px;
+    font-size: 40px;
+}
+.offerp2{
+    width: 120px;
+    height: 4px;
+    background-color: #E07A5F;
+    margin: auto;
+    margin-top: 8px;
+}
+.offer::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:50%;
+    height: 50%;
+    content: " ";
+    background-color:#E07A5F ;
+    opacity: 0;
+    z-index: -1;
+
+}
+.offer:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+.offer2::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:50%;
+    height: 50%;
+    content: " ";
+    background-color:#E07A5F ;
+    opacity: 0;
+    z-index: -1;
+
+}
+.offer2:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 1s;
+}
+.offer:hover .offerh{
+  color: #E07A5F;
+}
+.offer:hover .offerp{
+    color: black;
+}
+.offer2:hover .offerh{
+  color: #E07A5F;
+}
+.offer2:hover .offerp{
+    color: black;
+}
+.choose-container{
+    width: 80%;
+    margin: auto;
+}
+.circules{
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    
+}
+.c1{
+    background-color: #E07A5F;
+}
+.c{
+    background-color:#aba8a5;
+}
+.chooseimg{
+    display: inline-block;
+    margin-top: -360px;
+    margin-left: 900px;
+    float: right;
+}
+.parent{
+    margin-top:10px;
+    margin-left: 150px;
+}
+.parent .circules{
+    float: left;
+    margin-left: 10px;
+    
+
+}
+.chooseh2{
+    display: inline-block;
+    margin-top: 100px;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.choosep2{
+    width: 100px;
+    height: 4px;
+    background-color: #E07A5F;
+    margin-top: 8px;
+}
+
+.choose-parent .choose-content{
+
+float: left;
+font-weight: bold;
+display: inline-block;
+}
+.choose-content .choosep{
+     margin-top: 20px;
+     color: #91908f;
+     
+}
+.choosep1{
+    color: #aba8a5;
+    
+    
+}
+.choose-item {
+  margin: 8px 0;
+}
+
+.choose-item i {
+  color: #E07A5F;     /* checkmark color */
+  font-size: 15px;
+}
+.c{
+    position: relative;
+}
+.c::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: " ";
+    width: 0;
+    height: 0;
+    background-color: #E07A5F;
+    opacity: 0;
+}
+.c:hover::after{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 1;
+    transition: 0.1s;
+
+}
+.icons-section{
+    width: 100%;
+    height: 100vh;
+
+
+ 
+   
+}
+.icons-container{
+    width: 100%;
+    margin: auto;
+
+}
+.icons-section .icons-img{
+    width: 100%;
+    height: 300px;
+    background-image:url(../IMG/chanel-fragrance-Best-Summer-Perfumes-For-Women.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 700px;
+
+    
+   
+    
+    
+}
+.icons-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(145, 128, 124, 0.7);
+    
+}
+.icons-parent .icons-items{
+    float: left;
+    margin-left: 230px;
+    text-align: center;
+    color: #FFFCF7;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.icons-items i{
+    font-size: 40px;
+    
+    margin: auto;
+    color: #81B29A;
+    
+}
+.icons-items .iconsp1{
+    margin-top: 20px;
+}
+.pricing-section{
+    width: 100%;
+    height: 100vh;
+
+}
+.pricing-container{
+    width: 80%;
+    margin: auto;
+}
+.pricing-parent .pricing-item{
+    width: 300px;
+    height: 350px;
+    border: 1px #E07A5F solid;
+    border-radius: 10px;
+    float: left;
+    margin-left: 80px;
+    text-align: center;
+    margin-top: 130px;
+    position: relative;
+}
+.mini-circule{
+    width: 100px;
+    height: 100px;
+    border: 2px #E07A5F solid;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.pricingh{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.pricingp{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.pricingb{
+    margin-top:  20px;
+    text-transform: capitalize;
+    width: 180px;
+    height: 25px;
+    border: 2px #E07A5F solid;
+    border-radius: 10px;
+
+}
+.pricingh2{
+    padding-top: 80px ;
+    text-align: center;
+    font-size: 40px;
+}
+.pricingp2{
+    width: 110px;
+    height: 4px;
+    background-color: #E07A5F;
+    margin: auto;
+    margin-top: 8px;
+}
+.pricing-item::after{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100% ;
+  height: 0%;
+  background-color: #E07A5F;
+  opacity: 0;
+  z-index: -1;
+
+}
+.pricing-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.pricing-item:hover .pricingh{
+    color: #E07A5F;
+}
+
+.content-section{
+    width: 100%;
+    height: 100vh;
+ 
+   
+}
+.content-container{
+    width: 100%;
+    margin: auto;
+
+}
+.content-section .content-img{
+    width: 100%;
+    height: 300px;
+    background-image:url(../IMG/chanel-fragrance-Best-Summer-Perfumes-For-Women.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 400px;
+    
+}
+.content-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(145, 128, 124, 0.7);
+    
+}
+.content-parent .content{
+    float: right;
+    margin-right: 80px;
+    margin-top: 100px;
+}
+.content-info .person{
+    width: 100px;
+    height: 100px;
+    background-image: url(../IMG/trainer-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left:10px ;
+}
+.content-info .info{
+    float: right;
+    margin-right: 330px;
+    margin-top: 10px;
+}
+.info .contents{
+    margin-top: 10px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFCF7;
+}
+.info .contentss{
+    margin-top: 5px;
+    margin-left:10px ;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: bold;
+    color: #c7c6c4;
+}
+.contentpara{
+  width: 400px;
+  height: 100px;
+  display: inline-block;  
+  margin-top: 10px;
+  margin-left:18px ;
+
+}
+.contentp{
+    display: inline;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #efedec;
+}
+.team-section{
+    width: 100%;
+    height: 100vh;
+}
+.team-container {
+   width: 80%;
+   margin:auto ;
+}
+
+.team-parent {
+    margin-top: 100px;
+   overflow: auto;
+}
+
+
+.team-item {
+   float: left;
+   background-color: rgb(209, 208, 207);
+   width: 30%;
+   height: 300px;
+   padding: 18px  14px;
+   text-align: center;
+   position: relative;
+   border-radius: 10px;
+}
+
+.item2 {
+   margin: 0px  5% ;
+}
+
+.team-image {
+   width: 90%;
+   margin: auto;
+
+   position: relative;
+   
+}
+
+.team-image  img {
+   width: 100%;
+}
+
+.team-icons {
+   position: absolute;
+
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+
+   background-color: black;
+
+     visibility: hidden;
+     opacity: 0;
+     transition: 1s ;
+}
+
+
+.team-item:hover    .team-icons {
+   visibility: visible;
+   opacity: 0.5 ;
+}
+
+.team-icons  a {
+   display: block;
+   width: 40px;
+   height: 40px;
+   background-color:#E07A5F;
+   color: #fff;
+  
+   margin-left: auto ;
+}
+
+.team-icons  a  i {
+     line-height: 40px;
+     font-size: 23px;
+}
+
+.team-info-title {
+   padding: 10px  0px;
+   text-transform: capitalize;
+}
+
+.team-info-p {
+   text-transform: capitalize;
+   color: #585858;
+}
+
+.team-item:hover   .team-info-title {
+   color: #fff;
+}
+
+.team-item:hover  .team-info-p {
+   color:blue
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+ /* pseudo classes  hover  active   focus       pseudo elements  :  after  before   */
+
+
+.team-item::after {
+   position: absolute;
+   content: "";
+
+   width: 100%;
+   height: 0;
+
+    top:0;
+    right: 0;
+
+   background-color: #E07A5F;
+   opacity: 1;
+   border-radius: 10px;
+  
+}
+
+.team-item:hover::after {
+     width: 100%;
+     height: 100%;
+     opacity: 0.5;
+     transition: 0.5s;
+}
+.team-title {
+   font-size: 40px;
+   text-align: center;
+   text-transform: capitalize;
+  
+}
+
+.team-line {
+   width: 90px;
+   height: 4px;
+   background-color:#E07A5F;
+   margin: auto;
+
+  
+}
+.recent-section{
+    width: 100%;
+    height: 100vh;
+}
+.recent-container{
+    width: 80%;
+    margin: auto;
+}
+.recent-parent .recent-item{
+    text-align: center;
+    width: 355px;
+    height: 500px;
+    border: 1px solid #E07A5F;
+    border-radius: 10px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+}
+.recent-item .img1{
+    background-image: url(../IMG/trainer-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 240px;
+    height:240px;
+    border-radius: 10px ;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.recent-item .recent-info{
+    margin-top: 20px;
+    
+}
+.recenth{
+    margin-top: 20px;
+}
+.recentp{
+    margin-top: 20px;
+    font-weight: bold;
+    color: #585858;
+}
+.recents{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.recent-info i{
+    color: #E07A5F;
+}
+.recent-info a{
+  
+    color: #E07A5F;
+    text-decoration: none;
+}
+.recenta{
+    margin-top: 20px;
+}
+.recent-item::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    content: " ";
+    background-color: #E07A5F;
+    opacity: 0;
+    z-index: -1;
+
+}
+.recent-item:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.recent-item:hover .recenth{
+    color: #FFFCF7;
+}
+.recent-item:hover .recents{
+    color: #E07A5F;
+}
+.recent-item:hover .recentp{
+    color: black;
+}
+.img2{
+     background-image: url(../IMG/trainer-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 240px;
+    height:240px;
+    border-radius: 10px ;
+    margin: auto;
+    margin-top: 20px;
+}
+.recent-title {
+   font-size: 40px;
+   text-align: center;
+   text-transform: capitalize;
+  
+}
+
+.recent-line {
+   width: 90px;
+   height: 4px;
+   background-color:#E07A5F;
+   margin: auto;
+
+  
+}
+.last-section{
+    width: 100%;
+    height: 360px;
+    background-color:rgba(224, 122, 95, 0.7); 
+    padding: 20px;
+}
+.last-img{
+    width: 250px;
+    height: 200px;
+    background-image: url(../IMG/cropped-image-businessman-sitting-by-table-cafe-analyzing-indicators-laptop-computer_171337-5598.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+   margin: auto;
+
+
+}
+.last-icons i {
+ width :60px;
+ height: 60px;
+  font-size: 40px;            /* make the icons bigger */
+  color: #91908f;               /* icon color */
+  background: #FFFCF7; 
+  padding: 10px;              /* space inside the box */
+  border-radius: 50%;        /* rounded corners */
+  margin-top: 30px;}
+  .last-icons{
+    margin-left: 550px;
+  }
+  .lastp{
+    text-align: center;
+    margin-top: 10px;
+    color: #FFFCF7;
+  }
+.blog-menu {
+  position: relative;
+  display: inline-block;
+}
+.last-icons i:hover{
+    background-color: #E07A5F;
+}
+
+
+.dropdown {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: calc(100% + 10px);      /* <-- This puts the dropdown right under the Blog link */
+  left: 0;
+  background-color: #FFFCF7;
+  min-width: 170px;
+  height: 120px;
+  border-radius: 8px;
+  z-index: 100;
+  padding: 0;
+  transition: opacity 0.3s;
+  
+  
+}
+.blog-menu:hover .dropdown,
+.blog-menu:focus-within .dropdown,
+.dropdown:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.dropdown a {
+  display: inline-block;
+  color: black  !important;          
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+   
+}
+.dropdown a::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E07A5F !important;
+    opacity: 0;
+  
+}
+.dropdown a:hover::after{
+    width: 70%;
+    height: 2px;
+    opacity: 1;
+    transition: 1s;
+}
